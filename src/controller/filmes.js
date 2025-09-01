@@ -10,7 +10,7 @@ export const getFilmes = (req, res) => {
 };
 
 export const postFilme = (req, res) => {
-  const { titulo, imagem, banner } = req.body; 
+  const { titulo, imagem, banner, categoria } = req.body; 
   if (!titulo || !imagem || !banner || !categoria) {
     return res.status(400).json({ erro: 'Campos "titulo", "imagem", "banner" e "categoria" são obrigatórios.' });
   }
@@ -20,6 +20,12 @@ export const postFilme = (req, res) => {
     if (error) {
       return res.status(500).json({ erro: error.message });
     }
-    res.status(201).json({ id: this.lastID, titulo, imagem, banner, categoria });
+    res.status(201).json({
+       id: this.lastID, 
+       titulo, 
+       imagem, 
+       banner, 
+       categoria 
+      });
   });
 }
