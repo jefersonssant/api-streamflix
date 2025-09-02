@@ -1,7 +1,9 @@
 import express from 'express';
 import db from './dbConfig.js';
 import routes from './routes.js';
+import cors from 'cors';
 const app = express();
+app.use(cors());
 const port = 3000;
 
 app.get('/', (req, res) => {
