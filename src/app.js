@@ -4,11 +4,14 @@ import routes from './routes.js';
 const app = express();
 const port = 3000;
 
+app.get('/', (req, res) => {
+  res.send('Acesse a rota /api/filmes para ver os filmes cadastrados.');
+});
 app.use(express.json());
 db;
 app.use('/api', routes);
 
 
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port}/api/filmes`);
 });
