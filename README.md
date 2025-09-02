@@ -6,7 +6,7 @@ Esta é uma API (Application Programming Interface ou Interface de Programação
 
 ## Link de Deploy no Render
 
-:link: <a href="https://api-streamflix.onrender.com/api/filmes" target="_blank"></a>
+:link: <a href="https://api-streamflix.onrender.com/api/filmes" target="_blank">API-StreamFlix</a>
 
 Este link pode ser utilizado para requisições do tipo GET e POST.
 
@@ -70,6 +70,7 @@ Retorna todos os filmes cadastrados na API:
     "categoria": "Filmes de Terror"
   }
 ]
+```
 
 ## Tecnologias Utilizadas
 
