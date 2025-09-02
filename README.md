@@ -27,7 +27,7 @@ npm install
 ```bash
 npm run dev
 ```
-Alternativ:
+Alternativa:
 
 ```bash
 npm start
